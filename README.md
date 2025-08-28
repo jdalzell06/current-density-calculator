@@ -17,7 +17,7 @@ Requires **numpy**. Install via pip if needed:
 import numpy as np
 from current_density import CurrentDensityCalculator
 
-# Example magnetic field (2D numpy array)
+Example magnetic field (2D numpy array)
 B_field = np.random.rand(64,64) * 1e-4  # Tesla
 
 calculator = CurrentDensityCalculator(B_field=B_field, scan_size_x=10e-6, scan_size_y=10e-6)

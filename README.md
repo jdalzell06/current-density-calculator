@@ -14,12 +14,11 @@ Requires **numpy**. Install via pip if needed:
 
 ## Example Usage 
 
+```python
 import numpy as np
 from current_density import CurrentDensityCalculator
 
-Example magnetic field (2D numpy array)
 B_field = np.random.rand(64,64) * 1e-4  # Tesla
-
 calculator = CurrentDensityCalculator(B_field=B_field, scan_size_x=10e-6, scan_size_y=10e-6)
 results = calculator.compute()
 
@@ -27,6 +26,7 @@ jx = results['jx']
 jy = results['jy']
 j_norm = results['j_norm']
 
+```
 
 ## References
 [1] C. J. McCluskey, J. Dalzell, A. Kumar, and J. M. Gregg, “Current Flow Mapping in Conducting Ferroelectric Domain Walls Using Scanning NV‐Magnetometry,” Advanced Electronic Materials, Jun. 2025, doi:10.1002/aelm.202500142.
